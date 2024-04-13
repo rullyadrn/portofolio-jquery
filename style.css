@@ -1,0 +1,450 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+h2 {
+  text-align: left;
+  margin: 0;
+  margin-left: 250px; /* Penyesuaian margin untuk h2 */
+}
+
+/* Header Styles */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #000;
+  color: #fff;
+  z-index: 1000; /* Pastikan navbar berada di atas konten lain */
+  margin-left: -40px;
+}
+
+.logo {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-left: 50px;
+}
+
+.logo,
+.menu-icon {
+  vertical-align: middle;
+}
+
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+  transition: color 0.3s;
+}
+
+.navbar.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar a:hover,
+.navbar a:active,
+.navbar a:focus {
+  color: #333; /* Warna yang diubah saat tautan di-hover atau di-klik */
+}
+
+.menu-icon {
+  font-size: 24px;
+  display: none;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    display: flex;
+    flex-direction: column; /* Mengatur tata letak menjadi kolom pada layar kecil */
+    align-items: center; /* Pusatkan elemen pada layar kecil */
+  }
+
+  .navbar a {
+    margin-bottom: 10px; /* Atur jarak antara tautan pada layar kecil */
+  }
+
+  .menu-icon {
+    display: block; /* Tampilkan ikon menu pada layar kecil */
+    text-align: center; /* Pusatkan ikon menu */
+  }
+
+  .menu-icon {
+    font-size: 24px; /* Atur ukuran ikon menu */
+    cursor: pointer; /* Ubah kursor saat diarahkan ke ikon */
+  }
+}
+
+.text-animate {
+  margin-top: 20px; /* Sesuaikan jarak atas untuk layar kecil */
+  text-align: left;
+}
+
+.circle {
+  margin: 0 5px 20px; /* Sesuaikan margin untuk layar kecil */
+}
+
+
+/* Home Section Styles */
+.home {
+  background-color: #0A0119;
+  padding: 100px 20px;
+  text-align: left;
+  color: #fff;
+}
+
+.home-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.text-animate {
+  max-width: 500px; /* Atur lebar maksimum elemen .text-animate */
+  margin: 0 auto; /* Pusatkan elemen .text-animate */
+  margin-left: 270px;
+  margin-top: 110px;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.circle-container {
+  display: flex;
+  align-items: center;
+}
+
+.circle {
+  width: 150px; /* Sesuaikan dengan ukuran yang diinginkan */
+  height: 150px; /* Sesuaikan dengan ukuran yang diinginkan */
+  background-color: transparent; /* Hapus jika tidak diperlukan */
+  text-align: center;
+  line-height: 150px; /* Sesuaikan dengan tinggi dan lebar lingkaran */
+  margin-bottom: 20px; /* Menambahkan jarak di antara lingkaran */
+  border-radius: 50%; /* Membuat elemen berbentuk lingkaran */
+  color: white; /* Warna teks di dalam lingkaran */
+  font-size: 40px;
+  position: relative; /* Mengatur posisi relatif untuk lingkaran */
+}
+
+.circle-1 {
+  background-color: #FF7A00; /* Warna untuk lingkaran pertama */
+  top: 20px; /* Mengatur posisi lingkaran 1 */
+  left: 90px; /* Menggeser lingkaran ke kiri sejauh 50 piksel */
+  color: white;
+}
+
+.circle-2 {
+  background-color: #F7FC00; /* Warna untuk lingkaran kedua */
+  top: 120px; /* Mengatur posisi lingkaran 2 */
+  left: 10px; /* Menggeser lingkaran ke kiri sejauh 100 piksel */
+  color: black;
+}
+
+.portofolio-button {
+  background-color: #fff; /* Warna latar belakang tombol */
+  color: #000; /* Warna teks tombol */
+  padding: 5px 10px; /* Padding (jarak) di dalam tombol */
+  border: none; /* Menghapus border */
+  border-radius: 20px; /* Membuat sudut tombol melengkung */
+  cursor: pointer; /* Mengubah kursor saat diarahkan ke tombol */
+  font-size: 16px; /* Ukuran font */
+  margin-left: 0px;
+  margin-top: 20px;
+}
+
+.portofolio-button:hover {
+  background-color: #333; /* Warna latar belakang saat tombol di-hover */
+}
+
+/* About Me Section Styles */
+.about-me {
+  background-color: #0A0119;
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  text-align: left;
+  color: #fff;
+}
+
+.about-content article {
+  max-width: 400px; /* Atur lebar maksimum sesuai keinginan Anda */
+  margin: 0 auto; /* Untuk membuat elemen berada di tengah secara horizontal */
+  margin-left: -10px;
+  margin-top: 50px;
+}
+
+.about-content h2 {
+  text-align: left;
+  margin-left: -10px;
+}
+
+.hubungi-button {
+  background-color: #fff; /* Warna latar belakang tombol */
+  color: #000; /* Warna teks tombol */
+  padding: 5px 10px; /* Padding (jarak) di dalam tombol */
+  border: none; /* Menghapus border */
+  border-radius: 20px; /* Membuat sudut tombol melengkung */
+  cursor: pointer; /* Mengubah kursor saat diarahkan ke tombol */
+  font-size: 16px; /* Ukuran font */
+  margin-left: -10px;
+  margin-top: -100px;
+}
+
+.hubungi-button:hover {
+  background-color: #333; /* Warna latar belakang saat tombol di-hover */
+}
+
+.about-me .about-img {
+  float: right; /* Membuat gambar berada di sebelah kanan */
+  margin-left: 500px; /* Memberi jarak antara gambar dan teks */
+  margin-top: -260px;
+}
+
+
+/* Skill Section Styles */
+.skill {
+  background-color: #0A0119;
+  padding: 100px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.skill-row {
+  display: flex;
+  justify-content: center; /* Mengatur konten secara horizontal di tengah */
+}
+
+.skill-column {
+  margin: 0 30px; /* Jarak antara kolom */
+}
+
+.skill-box {
+  width: 150px; /* Lebar box */
+  height: 150px; /* Tinggi box */
+  padding: 10px; /* Padding dalam box */
+}
+
+.skill-box img {
+  width: 75px; /* Lebar gambar */
+  height: 75px; /* Tinggi gambar */
+  float: left; /* Mengatur gambar berada di sebelah kiri teks */
+  margin-right: 10px; /* Jarak antara gambar dan teks */
+}
+
+
+.skill-box h3 {
+  font-size: 14px; /* Ukuran font */
+}
+
+.progress {
+  margin-bottom: 20px;
+}
+
+.progress img {
+  margin-bottom: -10px;
+}
+
+.bar {
+  background-color: #333;
+  height: 10px;
+  margin-top: 5px;
+}
+
+.bar span {
+  display: block;
+  background-color: #00bcd4;
+  height: 200%;
+}
+
+/* Portfolio Section Styles */
+.portfolio {
+  padding: 100px 20px;
+  text-align: center;
+  background-color: #0A0119;
+  color: #fff;
+}
+
+.portfolio img {
+  margin-bottom: 10px;
+}
+
+.portfolio h4 {
+  margin-bottom: 20px;
+}
+
+.proyek1-button {
+  background-color: #fff; /* Warna latar belakang tombol */
+  color: #000; /* Warna teks tombol */
+  padding: 5px 10px; /* Padding (jarak) di dalam tombol */
+  border: none; /* Menghapus border */
+  border-radius: 20px; /* Membuat sudut tombol melengkung */
+  cursor: pointer; /* Mengubah kursor saat diarahkan ke tombol */
+  font-size: 16px; /* Ukuran font */
+  margin-left: 0px;
+  margin-top: 20px;
+}
+
+.proyek1-button:hover {
+  background-color: #333; /* Warna latar belakang saat tombol di-hover */
+}
+
+.proyek2-button {
+  background-color: #fff; /* Warna latar belakang tombol */
+  color: #000; /* Warna teks tombol */
+  padding: 5px 10px; /* Padding (jarak) di dalam tombol */
+  border: none; /* Menghapus border */
+  border-radius: 20px; /* Membuat sudut tombol melengkung */
+  cursor: pointer; /* Mengubah kursor saat diarahkan ke tombol */
+  font-size: 16px; /* Ukuran font */
+  margin-left: 0px;
+  margin-top: 20px;
+}
+
+.proyek2-button:hover {
+  background-color: #333; /* Warna latar belakang saat tombol di-hover */
+}
+
+/* Why Hire Me Section Styles */
+.why-hire-me {
+  background-color: #0A0119;
+  padding: 100px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.why-hire-me .hire {
+  margin-bottom: 30px;
+}
+
+.why-hire-me img {
+  margin-bottom: 10px;
+}
+
+/* Client Testimonials Section Styles */
+.client-testimonials {
+  background-color: #0A0119;
+  padding: 100px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.client-testimonials .about-img {
+  margin-bottom: 20px;
+}
+
+.client-testimonials img {
+  margin-bottom: 10px;
+}
+
+/* Contact Section Styles */
+.contact {
+  background-color: #0A0119;
+  padding: 100px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.contact h5 {
+  margin-bottom: 20px;
+}
+
+.contact h2 {
+  text-align: center;
+  margin-left: 10px;
+}
+
+.gmail,
+.instagram,
+.phone {
+  margin-bottom: 20px;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.footer-text p {
+  margin-bottom: 10px;
+}
+
+.footer-icontop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
+  .logo {
+    margin-left: 20px;
+  }
+
+  .navbar a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .navbar.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-me {
+    flex-direction: column;
+  }
+
+  .about-me .about-img {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+}
+nav ul {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 80%;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  background-color:#3c0016;
+  z-index: -0;
+  transform: translateX(100%);
+  transition: all 1s;
+}
